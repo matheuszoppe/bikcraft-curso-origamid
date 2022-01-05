@@ -1,80 +1,73 @@
-.header-bg{
-    background-color: #000000;
-    
+.header-bg {
+  background-color: var(--cor-12);
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  padding: 20px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  padding: 16px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.header-menu a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: var(--cor-0);
+  margin-top: 4px;
+  transition: 0.3s;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
     gap: 20px;
-    
-    padding: 20px;
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
+  }
+
+  .header-menu a {
+    background: var(--cor-11);
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  .header-menu a:hover {
+    background: var(--cor-10);
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
 }
 
-.header-menu{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
 
-.header-menu a{
-    padding: 16px 0;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 18px;
-    position: relative;
-    font-family: 'Poppins';
-    font-weight: 400;
-
-}
-
-.header-menu a::after{
-    position: absolute;
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    background: #ffffff;
-    margin-top: 4px;
-    transition: 0.3s;
-}
-
-.header-menu a:hover::after{
-    width: 100%;
-}
-
-@media (max-width: 800px){
-    .header-menu{
-        gap: 20px;
-    }
-
-    .header-menu a{
-        background: #111111;
-        padding: 12px 16px;
-        border-radius: 4px;
-    }
-
-    .header-menu a:hover{
-        background: #2e2e2e;
-    }
-
-    .header-menu a::after{
-        display: none;
-    }
-}
-
-@media (max-width: 600px){
-    .header-menu{
-        gap: 12px;
-    }
-
-    .header-menu a{
-        font-size: 14px;
-        padding: 8px 12px;
-        
-    }
+  .header-menu a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
