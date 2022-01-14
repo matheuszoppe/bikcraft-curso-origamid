@@ -6,7 +6,8 @@
     display: grid;
     grid-template-columns: 3fr 5fr 4fr;
     gap: 40px;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer h3{
@@ -53,6 +54,8 @@
     .footer{
         grid-template-columns: 1fr 1fr;
     }
+
+    
 }
 
 @media(max-width: 600px){   

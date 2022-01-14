@@ -3,7 +3,8 @@
 }
 
 .seguros{
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
