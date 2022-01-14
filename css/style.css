@@ -5,6 +5,8 @@
 @import "./utilidades/componente.css";
 
 @import "./global/header.css";
+@import "./global/footer.css";
+
 
 @import "./home/introducao.css";
 @import "./home/tecnologia.css";
