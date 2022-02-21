@@ -8,8 +8,8 @@
   flex-wrap: wrap;
   gap: 20px;
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
  
 }
 
@@ -36,7 +36,8 @@
   transition: 0.3s;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 

@@ -15,14 +15,26 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
+    
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- documentElement é a mesma coisa que selecionar o html -->
+    
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <header class="header-bg">
       <div class="header container">
         <a href="./">
-          <img src="./img/bikcraft.svg" alt="bikcraft" />
+          <img
+            src="./img/bikcraft.svg"
+            width="136"
+            height="32"
+            alt="bikcraft"
+          />
         </a>
         <nav aria-label="primaria">
           <ul class="header-menu font-1-m cor-0">
@@ -37,21 +49,29 @@
     <main class="introducao-bg">
       <div class="introducao container">
         <div class="introducao-conteudo">
-          <h1 class="font-1-xxl cor-0">
+          <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">
             Bicicletas feitas sob medida<span class="cor-p1">.</span>
           </h1>
-          <p class="fonr-2-l cor-5">
+          <p class="font-2-l cor-5 fadeInDown" data-anime="400">
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
           </p>
-          <a class="botao" href="./bicicletas.html">Escolha a sua</a>
+          <a class="botao fadeInDown" data-anime="600" href="./bicicletas.html"
+            >Escolha a sua</a
+          >
         </div>
-        <div>
+        <picture data-anime="800" class="fadeInDown">
+          <source
+            media="(max-width: 800px)"
+            srcset="./img/bicicletas/nimbus.jpg"
+          />
           <img
             src="./img/fotos/introducao.jpg"
             alt="Bicicleta eletrica preta"
+            width="1280"
+            height="1600"
           />
-        </div>
+        </picture>
       </div>
     </main>
     <article class="bicicletas-lista">
@@ -62,21 +82,36 @@
       <ul>
         <li>
           <a href="./bicicletas/magic.html">
-            <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta preta" />
+            <img
+              src="./img/bicicletas/magic-home.jpg"
+              width="920"
+              height="1040"
+              alt="Bicicleta preta"
+            />
             <h3 class="font-1-xl">Magic Might</h3>
             <span class="font-2-m cor-8">R$ 2499</span>
           </a>
         </li>
         <li>
           <a href="./bicicletas/nimbus.html">
-            <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta preta" />
+            <img
+              src="./img/bicicletas/nimbus-home.jpg"
+              width="920"
+              height="1040"
+              alt="Bicicleta preta"
+            />
             <h3 class="font-1-xl">Nimbus Stark</h3>
             <span class="font-2-m cor-8">R$ 4999</span>
           </a>
         </li>
         <li>
           <a href="./bicicletas/nebula.html">
-            <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta preta" />
+            <img
+              src="./img/bicicletas/nebula-home.jpg"
+              width="920"
+              height="1040"
+              alt="Bicicleta preta"
+            />
             <h3 class="font-1-xl">Nebula Cosmic</h3>
             <span class="font-2-m cor-8">R$ 3999</span>
           </a>
@@ -102,7 +137,12 @@
 
           <div class="tecnologia-vantagens">
             <div>
-              <img src="./img/icones/eletrica.svg" alt="" />
+              <img
+                src="./img/icones/eletrica.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
               <h3 class="font-1-m cor-0">Motor Elétrico</h3>
               <p class="font-2-s cor-5">
                 Toda Bikcraft é equipada com um motor elétrico que possui
@@ -111,7 +151,12 @@
               </p>
             </div>
             <div>
-              <img src="./img/icones/rastreador.svg" alt="" />
+              <img
+                src="./img/icones/rastreador.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
               <h3 class="font-1-m cor-0">rastreador</h3>
               <p class="font-2-s cor-5">
                 Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos
@@ -121,7 +166,12 @@
           </div>
         </div>
         <div class="tecnologia-imagem">
-          <img src="./img/fotos/tecnologia.jpg" alt="" />
+          <img
+            src="./img/fotos/tecnologia.jpg"
+            width="1200"
+            height="1920"
+            alt=""
+          />
         </div>
       </div>
     </article>
@@ -147,6 +197,8 @@
         <img
           src="./img/fotos/depoimento.jpg"
           alt="Pessoa pedalando uma Bikecraft"
+          width="1560"
+          height="1360"
         />
       </div>
       <div class="depoimento-conteudo">
@@ -232,8 +284,12 @@
             </ul>
           </nav>
         </div>
-        <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
+        <p class="footer-copy font-2-m cor-6">
+          Bikcraft © Alguns direitos reservados.
+        </p>
       </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

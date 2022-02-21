@@ -12,13 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href=".;/favicon.svg" type="image/svg+xml" />
 
     <link rel="stylesheet" href="../css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body id="bicicleta">
     <header class="header-bg">
       <div class="header container">
-        <a href="./">
+        <a href="../">
           <img src="../img/bikcraft.svg" alt="bikcraft" />
         </a>
         <nav aria-label="primaria">
@@ -52,7 +56,11 @@
             velocidade.
           </p>
           <div class="bicicleta-comprar">
-            <a class="botao" href="../orcamento.html">Comprar Agora</a>
+            <a
+              class="botao"
+              href="../orcamento.html?tipo=bikcraft&produto=nimbus"
+              >Comprar Agora</a
+            >
             <span class="font-1-xs cor-6"
               ><img src="../img/icones/entrega.svg" alt="" /> Entrega em 5
               dias</span
@@ -109,9 +117,7 @@
     </main>
 
     <article class="bicicletas-lista container">
-      <h2 class="font-1-xxl ">
-        escolha a sua <span class="cor-p1">.</span>
-      </h2>
+      <h2 class="font-1-xxl">escolha a sua <span class="cor-p1">.</span></h2>
 
       <ul>
         <li>
@@ -121,7 +127,7 @@
             <span class="font-2-m cor-8">R$ 2499</span>
           </a>
         </li>
-       
+
         <li>
           <a href="./nebula.html">
             <img src="../img/bicicletas/nebula.jpg" alt="Bicicleta preta" />
@@ -135,11 +141,20 @@
     <article class="seguro-bg">
       <div class="seguro container">
         <dir class="seguro-imagem">
-          <img src="../img/fotos/seguros.jpg" alt="Pessoa parada em cima de uma bicicleta">
+          <img
+            src="../img/fotos/seguros.jpg"
+            alt="Pessoa parada em cima de uma bicicleta"
+          />
         </dir>
         <div class="seguro-conteudo">
-          <h2 class="font-1-xxl cor-0">Pedale mais tranquilo com o nosso <span class="cor-p1">seguro.</span></h2>
-          <p class="fon-2-l cor-5">Inscreva-se em um dos planos do nosso seguro Bikecraft e aproveite diverssos benefícios.</p>
+          <h2 class="font-1-xxl cor-0">
+            Pedale mais tranquilo com o nosso
+            <span class="cor-p1">seguro.</span>
+          </h2>
+          <p class="fon-2-l cor-5">
+            Inscreva-se em um dos planos do nosso seguro Bikecraft e aproveite
+            diverssos benefícios.
+          </p>
           <a class="botao" href="../seguros.html"> Conheça Mais</a>
         </div>
       </div>
@@ -186,5 +201,6 @@
         </p>
       </div>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>
